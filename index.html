@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WebGl Map Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script src="map.js"></script>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+</head>
+<body onload="theGlobe()">
+    
+    <div id="globe">
+        <div id="map"></div>
+    </div>
+    
+    <div class="coords-click">
+        <div class="coords-click-container">
+            <form class="coords-form">
+                    <label>Click Map For Coordinates</label>
+                <br>
+                    <label>Latitude: </label>
+                    <input readonly id="lat">
+                <br>
+                    <label>Longitude:</label>
+                    <input readonly id="lon">
+            </form>
+        </div>
+    </div>
+    
+    <div class="work-space">
+        <div class="controls">
+            <div class="input-card">
+                
+                <select class="map-options" id="map-options">
+                    <option value="rotate-globe" selected>Rotate Globe</option>
+                    <option value="add-marker" selected>Add Marker</option>
+                    <option value="remove-marker" selected>Remove Marker</option>
+                    <option value="pan-to" selected>Pan-To-Location</option>
+                    <option value="add-polygon" selected>Create Polygon</option>
+                    <option value"default" selected>Select An Option</option>
+                </select>
+                
+                <button class="run-button" id="run-button">Run</button>
+                
+                <div class="pan-to-location">
+                    <form class="pan-to-options">
+                            <label class="left">Left Coordinates:</label>
+                            <label>Latitude:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Longitude:</label>
+                            <input type="number" class="pan-to-left-coord" id="pan-left-lat" value="40">
+                            <input type="number" class="pan-to-left-coord" id="pan-left-lon" value="-84">
+                        <br>
+                            <label class="left">Right Coordinates:</label>
+                            <label>Latitude:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Longitude:</label>
+                            <input type="number" class="pan-to-left-coord" id="pan-right-lat" value="40">
+                            <input type="number" class="pan-to-right-coord" id="pan-right-lon" value="-81">
+                        <br>
+                            <label class="left">Heading:</label>
+                            <input type="number" class="pan-to-heading" id="pan-heading" value="0">
+                        <br>
+                            <label class="left">Tilt:</label>
+                            <input type="number" class="pan-to-tilt" id="pan-tilt" value="30">
+                        <br>
+                            <label class="left">Animation Duration (seconds):</label>
+                            <input type="number" class="pan-to-duration" id="pan-duration" value="5">
+                    </form>
+                </div>
+                
+                <div class="add-marker-container">
+                    <form class="add-marker-options">
+                            <label class="left">Click on map to add a marker</label>
+                            <label>Add poppup text:</label>
+                            <input type="text" class="add-marker-text" id="add-marker-text" value="">
+                    </form>
+                </div>
+                
+                <div class="rotate-globe-container">
+                    <form class="rotate-globe-options">
+                        <label class="left">Click run to have the globe continuously rotate.</label>
+                        <label class="left">To stop click run button again.</label>
+                        <label>Set a speed value:</label>
+                        <input type="text" class="add-marker-text" id="add-marker-text" value="Not working yet">  
+                    </form>
+                </div>
+                
+                <div class="create-polygon-container">
+                    <form class="create-polygon-options">
+                        <label>Click a shape. Hit run to generate polygon.</label>
+                        <label>Copy and Paste:</label>
+                        <input readonly id="polyArr">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

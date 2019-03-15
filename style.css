@@ -1,0 +1,129 @@
+body {
+    background-color: grey;
+}
+
+#globe{
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background-color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    border-radius: 8px;
+}
+
+#map {
+    height: 100%;
+    border-radius: 8px;
+}
+
+.coords-click {
+    position: absolute;
+    background-color: aliceblue;
+    width: 400px;
+    height: 90px;
+    right: 10px;
+    bottom: 37vh;
+    border-radius: 8px;
+}
+
+.coords-click-container {
+    position: absolute;
+    width: 97%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: #90a4ae;
+    margin-top: 5px;
+    margin-left: 6px;
+}
+
+.coords-form {
+    padding-left: 5px;
+}
+
+.coords-form label {
+    display: inline-block;
+    width: 180px;
+    padding: 2px
+}
+
+.coords-form input {
+    padding: 2px;
+}
+
+.container-style {
+    position: absolute;
+    height: 90%;
+    width: 100%;
+    bottom: 0px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #b0bec5;
+}
+
+.work-space {
+    position: absolute;
+    background-color: aliceblue;
+    right: 10px;
+    width: 400px;
+    height: 35vh;
+    border-radius: 8px;
+    bottom: 10px;
+}
+
+.input-card {
+    position: absolute;
+    width: 96%;
+    height: 95%;
+    border-radius: 8px;
+    margin: 2%;
+    background-color: #90a4ae;
+    
+}
+
+.outputs {
+    position: absolute;
+    background-color: aliceblue;
+    bottom: 10px;
+    width: 99%;
+    height: 30vh;
+    border-radius: 8px
+}
+
+.pan-to-options {
+    padding-left: 5px
+}
+
+.pan-to-options label {
+    display: inline-block;
+    width: 350px;
+}
+
+.pan-to-options input {
+    margin-bottom: 10px;
+    margin-top: 3px
+}
+
+.add-marker-options label {
+    padding: 4px;
+    display: inline-block;
+    width: 350px;
+}
+
+.rotate-globe-options label {
+    padding: 4px;
+    display: inline-block;
+    width: 350px;
+}
+
+.create-polygon-options label {
+    padding: 4px;
+    display: inline-block;
+    width: 350px;
+}
+
+.create-polygon-options input {
+    margin-left: 10px;
+    width: 95%;
+    height: 220px;
+}
