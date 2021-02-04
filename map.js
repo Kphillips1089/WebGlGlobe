@@ -8,7 +8,7 @@ var theGlobe = function() {
     
     // Generate map layer for globe
     map = new WE.map('map', options);
-    WE.tileLayer('https://maps.tilehosting.com/styles/hybrid/{z}/{x}/{y}.jpg?key=tJWmYZGYA9XLdILcsbP8').addTo(map);
+    WE.tileLayer('https://api.maptiler.com/tiles/satellite/?key=3gv5IerecmA0E5z95Fyn#').addTo(map);
     
     // Initial animation onLoad
     new mapController().panInsideBounds([35, -85], [30, -99], 0, 20, 2);
